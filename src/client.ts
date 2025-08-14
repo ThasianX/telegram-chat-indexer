@@ -1,6 +1,7 @@
 import { TelegramClient } from "telegram";
 import { StringSession } from "telegram/sessions";
 import { NewMessage, NewMessageEvent } from "telegram/events";
+// @ts-ignore
 import input from "input";
 import { config } from "./config";
 import { Database } from "./db";
