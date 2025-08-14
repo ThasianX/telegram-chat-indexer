@@ -50,6 +50,10 @@ const CHATS = [
         name: "gev5",
         id: "-1002438696537",
     },
+    {
+        name: "gev7",
+        id: "-1002885618602",
+    },
 ];
 
 export const config = {

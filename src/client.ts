@@ -55,6 +55,13 @@ export class TelegramIndexer {
         this.setupMessageHandler();
     }
 
+    private async getAllChats() {
+        const dialogs = await this.client.getDialogs();
+        for (const di of dialogs) {
+            console.log(`${di.title} - ${di.id}`);
+        }
+    }
+
     private async updateEnvFile(key: string, value: string): Promise<void> {
         try {
             let envContent = await fs.readFile(".env", "utf-8");
