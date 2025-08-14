@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+    telegram-indexer:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: chat-indexer
+        env_file:
+            - .env
+        restart: unless-stopped
